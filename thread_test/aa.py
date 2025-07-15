@@ -70,7 +70,7 @@ def singleton(cls):
     return wraaper
 
 
-class Person
-    def
+# class Person
+#     def
 
 

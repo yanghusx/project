@@ -56,17 +56,21 @@ def longest_unique_substring(s):
 
 # class LengthUniqueStr
 
-s ="    fly me  to the moom"
-d =s.split()
-print(d)
-max_l = 0
+# s ="    fly me  to the moom"
+# d =s.split()
+# print(d)
+# max_l = 0
 # for i in range(d):
 
 
 def reverse_words_in_file(filename):
     with open(filename, 'r') as file:
+        # all_line = file.read()
+        # print("all_line", all_line)
+        # print("type,,,", type(all_line))
         lines = file.readlines()
         print(lines)
+        print(type(lines))
     if len(lines) != 2:
         print("文件内容不符合要求，应该有且仅有两行内容。")
         return
@@ -77,11 +81,10 @@ def reverse_words_in_file(filename):
     words1 = line1.split()
     words2 = line2.split()
     words1.extend(words2)
-    print(words1)
-    print(words2)
+
     words1.sort(reverse=True)
     # new_words.s
-    print(words1)
+    # print(words1)
 
 
 reverse_words_in_file("a.txt")
