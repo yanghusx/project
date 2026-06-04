@@ -29,7 +29,25 @@ def merge(left, right):
     return merger_list
 
 
+def long_startswith(lis):
+    start_str = lis[0]
+    for i in lis[1:]:
+        while not i.startswith(start_str):
+            start_str = start_str[:-1]
+            if not start_str:
+                return "无"
+    return start_str    
+print(long_startswith(["first", "file", "firsts"]))
 
+
+def printMutplictionTable():
+    for i in range(1, 10):
+        for j in range(1,i+1):
+            #print(f"{j}×{i}={i*j:2}", end="")
+            print(f"{j}*{i}={i*j}", end="\t")
+        print()  # 换行
+
+printMutplictionTable()
 
 
 if __name__ == '__main__':
